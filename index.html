@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Схема @backer.cash</title>
+	<!-- Подключаем шрифты -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<!-- Иконка сайта -->
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<!-- Стили ЦСС -->
+	<style type="text/css">
+		/*Адаптация под Мобильные устройства*/
+		@media screen and (max-width: 1500px) {
+		* {
+		-webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+		}
+		#onlyText {
+			width: 80%;
+		}
+		.imgCenter {
+			width: 10%;
+			height: 50%;
+		}
+		.shapeTriangle {
+			display:none;
+		}
+		.followMe {
+			display:none;
+		}
+		.accountNames {
+			display:none;		
+		}
+		.photoProfile {
+			margin-top: 100px;
+			width: 250px;
+			border-radius: 1000px;
+	    	border: 5px solid #E3E3E3;
+	    	box-shadow: 0 0 7px #666;
+	    }
+	    figure {
+	  		text-align: center;
+		}
+		}
+		
+		.hide {
+	    display: none; 
+		}
+		.hide + label ~ div{
+		    display: none;
+		    font-family: 'Montserrat', sans-serif;
+		}
+		.hide + label {
+		    padding: 0;
+		    color: black;
+		    font-family: 'Montserrat', sans-serif;
+		}
+		.hide:checked + label {
+		    color: black;
+		    border-bottom: 0;
+		    font-family: 'Montserrat', sans-serif;
+		}
+		.hide:checked + label + div {
+		    display: block; 
+		    padding: 10px;
+		    font-family: 'Montserrat', sans-serif;
+		}
+		.demo {
+	   		margin: 5% 10%;
+	    	font-family: 'Montserrat', sans-serif;
+		}
+		textarea {
+	    	resize: none;
+	    	font-size: 36px;
+	    	box-shadow: 0 0 7px #666;
+	    	background-color: #E6E6E6;
+	    }
+	    /*Десктопные приложения*/
+		* {
+		-webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+		}
+		#onlyText {
+			width: 90%;
+		}
+
+		.shapeTriangle {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			background-color: #3897f0;
+			width: 33px;
+			height: 30px;
+			text-align: center ;
+			border-radius: 4px;
+			padding: 2px;
+			line-height: 27px;
+			margin-top: -34px;
+			/*margin-left: 1150px;*/
+			margin-left: 35%;
+		}
+		.followMe {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			background-color: #3897f0;
+			width: 125px;
+			height: 30px;
+			text-align: center ;
+			border-radius: 4px;
+			padding: 2px;
+			line-height: 27px;
+			margin-top: -85px;
+			/*margin-left: 1015px;*/
+			margin-left: 24%;
+		}
+		.accountNames {
+			font-size: 42px;
+			font-family: 'Roboto', sans-serif;
+			margin-top: -140px;
+			/*margin-left: 765px;*/
+			
+		}
+		.photoProfile {
+			margin-top: 100px;
+			/*margin-left: 490px;*/
+			width: 200px;
+			border-radius: 1000px;
+	    	border: 5px solid #E3E3E3;
+	    	box-shadow: 0 0 7px #666;
+	    	margin-left: -30%;
+		}
+		.button {
+			background-color: #616161;
+			color: white;
+			font-family: 'Russo One', sans-serif;
+			font-size: 24px;
+			padding: 5px;
+			margin-top: 500px;
+		}
+		a {
+			text-decoration: none;
+		}
+		hr {
+			width: 60%;
+			margin-top: 200px;
+			border: 0.7px solid #9C9C9C;
+		}
+		.oneTitle {
+			font-family: 'Russo One', sans-serif;
+			font-size: 36px;
+		}
+		.oneText {
+			font-family: 'Montserrat', sans-serif;	
+		}
+		::-webkit-scrollbar { width: 3px; height: 3px;}
+		::-webkit-scrollbar-button {  background-color: #666; }
+		::-webkit-scrollbar-track {  background-color: #999;}
+		::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+		::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+		::-webkit-scrollbar-corner { background-color: #999;}}
+		::-webkit-resizer { background-color: #666;}
+	</style>
+</head>
+
+<body bgcolor="#F5F5F5">
+	<center><div class="imgCenter">
+	<a href="https://www.instagram.com/backer.cash"><img class="photoProfile" draggable="false" src="images/photoProfile.jpg"></a>
+	<a href="https://www.instagram.com/backer.cash" style="color: black; text-decoration: none;"><p class="accountNames">backer.cash</p></a>
+	<div class="followMe"><a href="https://www.instagram.com/backer.cash" style="color: white; text-decoration: none;">
+		Подписаться
+	</a></div>
+	<a href="https://www.instagram.com/backer.cash" style="color: white; text-decoration: none;"><div class="shapeTriangle">▼</div></a>
+	</div></center>
+
+	<hr>
+
+	<center><p class="oneTitle">Схема заработка <a href="https://www.instagram.com/backer.cash" style="color: black; text-decoration: none;">@backer.cash</a></p></center>
+	<center><p class="oneText">Привет! Вы попали сюда, вероятно потому что купили схему у <a href="https://www.instagram.com/backer.cash" style="color: black; text-decoration: none; font-weight: bold;">@backer.cash</a><br>Ну, или у его покупателей которые продали схему Вам.&nbsp; &nbsp;Краткость - сестра таланта, поэтому перейдем сразу к делу.<br><br>Вы купили схему с целью заработать. Это Вы и сделаете после прочтения этой статьи, главное - терпение и старание!</p></center>
+	
+	<br><br>
+	<center><p class="oneTitle">Суть заработка</p></center>
+	<center><p id="onlyText" class="oneText">Скорее всего вы задаётесь вопросом: ДА ЧТО ЖЕ НАДО ДЕЛАТЬ?! Ответ прост: Перепродажа. Вы должны перепродавать ссылки на этот сайт, и два чата в Telegram. <br> <a href="#" style="color: black; text-decoration: none; font-weight: bold;">schemeBacker.cash</a> и <a href="https://t.me/joinchat/AAAAAE067AwjFImx2S7Vyw" style="color: black; text-decoration: none; font-weight: bold;">dkmoney</a> и <a href="https://t.me/joinchat/AAAAAEV85T1I6E1j9zpuIg" style="color: black; text-decoration: none; font-weight: bold;">kooklom</a> <br> Сохраните эти три ссылки, они Вам обязательно понадобятся. <br> Ищем клиента ➜ продаем им эти ссылки под видом схем заработка. <br> На самом деле, если мы перейдем по любой из двух последних ссылок, мы попадем в Telegram-каналы, где описана одна и та же схема - перепродажа самого этого чата. Только по их схеме вы продаёте только один чат, а по моей сразу два, так и ещё и ссылку на этот сайт. В чём тогда суть этого сайта, хотите Вы спросить. Нет, не в объединении сразу двух чатов - сразу опровергну мысли некоторых. Дело в том, что в схемах каждого написано: Создаем аккаунт в Инстаграме, и продаём ссылку на этот канал. Но как развивать, правильно оформить и так далее - ни слова. Поэтому Этот сайт по истине уникален, ведь тут Вы узнаете не только о том, как правильно оформить аккаунт, вести диалог с будущим покупателем, так ещё я предоставлю Онлайн-ПО, чтобы Вы могли сделать это быстро, и правильно.</p></center>
+
+	<br><br>
+	<center><p class="oneTitle">Выбор никнейма</p></center>
+	<center><p class="oneText">Вы думаете - пропущу я этот шаг, я ведь смогу придумать никнейм.<br>Возможно это и так, но хочу Вам дать советы, и предупредить какие никнеймы лучше не брать.<br><br>1 совет: НЕ ИСПОЛЬЗУЙТЕ ЦИФРЫ В НИКНЕЙМЕ! Какой-нибудь <a style="font-weight: bold;">misha2006</a> не подойдет<br>2 совет: НЕ ИСПОЛЬЗУЙТЕ СВОЁ ИМЯ. Лучше придумайте себе какой нибудь <a style="font-weight: bold;">псевдоним<a><br>3 совет: ИСПОЛЬЗУЙТЕ МОЙ ГЕНЕРАТОР. Нажмите на кнопку <a style="font-weight: bold">Никнейм</a> ниже, чтобы сгенерировать Никнейм<br><br>
+
+	<script type="text/javascript">
+	function ElfNames() { 
+	var syllable_1 = ["al", "an", "bal", "bel", "cal", "cel", "el", "ell", "elr", "elv", "eow", "edr", "fal", "fel", "fin", "gal", "gel", "gl", "is", "lan", "leg", "lуm", "nal", "nel", "sal", "sel", "tal", "tel", "thr", "tin"]; 
+	var syllable_2 = ["adrie", "ara", "ebri", "ele", "ere", "io", "ithra", "ilma", "ilga", "ili", "orfi"]; 
+	var syllable_3 = ['.cash', '.money', '.cush', '.gold']
+	alert ('Ваш Никнейм: ' + syllable_1[Math.round(Math.random()*(30 - 1))] + syllable_2[Math.round(Math.random()*(11 - 1))] + syllable_3[Math.round(Math.random()*(4 - 1))]) 
+}
+</script>
+
+	<a class="button" onclick="ElfNames()"> Никнейм </a></p>
+	</center>
+	
+	<br><br>
+	<center><p class="oneTitle">Фотографии аккаунта</p></center>
+	<center><p id="onlyText" class="oneText">Фотографии в аккаунте обязательно нужны, это вызывает доверие у пользователей. Вы можете добавлять как свои фотографии, так и фотографии взятые из интернета. Такие фотографии можно найти по запросу: <a style="font-weight: bold">фото парней\девушек для фейка</a>. Или перейдите по любой из ссылок: <a href="https://vk.cc/9AN65e" style="font-weight: bold; color: black">этой</a> или <a href="https://vk.cc/9AN6RT" style="font-weight: bold; color: black">этой</a><br><br>Добавьте фото денег. Вы должны создать ощущение у пользователя о том, что вы богаты и ваши схемы заработка реально работают. Искать эти деньги в интернете не нужно, можно воспользоваться моим генератором фотографий денег ниже.</p>
+
+	<a class="button" onclick="smena()"> Генерировать! </a><br><br>
+	<img id="myimg" draggable="false" src="images/coins.png" width="200" height="200">
+	
+	<div>
+	<script>
+		var mas=["images/coin1.jpg", "images/coin2.jpg", "images/coin3.jpg", "images/coin4.jpg", "images/coin5.jpg", "images/coin6.jpg", "images/coin7.jpg", "images/coin8.jpg", "images/coin9.jpg", "images/coin10.jpg", "images/coin11.jpg", "images/coin12.jpg", "images/coin13.jpg", "images/coin14.jpg", "images/coin15.jpg", "images/coin16.jpg", "images/coin17.jpg", "images/coin18.jpg", "images/coin19.jpg", "images/coin20.jpg", ];
+		function smena() {
+   		var r = Math.floor(Math.random()*mas.length);
+   		document.getElementById("myimg").src=mas[r];
+		}
+	</script>
+	</div>
+	</center>
+
+	<br><br>
+	<center><p class="oneTitle">Описание аккаунта</p></center>
+	<center><p id="onlyText" class="oneText">Используйте для описания не больше 5-6 строк, места может и не хватить. Вначале напишите, что Вы зарабатываете в интернете тратя при этом минимальное количество времени. Заработок на абсолютном пассиве и так далее. Вы должны заинтересиовать пользователя пока он читает ваше описание. Дальше напишите какую сумму вы заработали или купили что-то дорогое за маленький промежуток времени, пользователь должен захотеть купить у вас схему. В конце укажите, чтобы писали Вам в Директ! В качестве "префикса" каждой строки, используйте эмоджи. В первую очередь эмоджи денег, а потом и другие эмоции. Скопировать их вы можете ниже! <br><br><a style="font-weight: bold">Деньги:</a><br><br><textarea disabled="true", readonly="false" style="width: 20%;">💰💵💶🤑💸💴</textarea><br><br><a style="font-weight: bold">Остальные эмоджи:</a><br><br><textarea disabled="true", readonly="false" style="width: 20%;">😎👌👣👀👁💪👑😱😈💀👻☠👽🤝☂</textarea>
+	<br><br>Пример можно посмотреть у меня: <a href="https://www.instagram.com/backer.cash" style="font-weight: bold; color: black;">@backer.cash</a>
+	</p></center>
+
+
+	<br><br>
+	<center><p class="oneTitle">Актуальные истории</p></center>
+	<center><p id="onlyText" class="oneText">Все истории добавляйте в актуальные, чтобы пользователь заходя в Ваш профиль мог посмотреть их быстро, чтобы они у него были на виду. Сортируйте их по разделам, и добавляйте яркие обложки! Кстати, Вы можете воспользоваться моим паком обложек для всех популярных разделов: Отзывы, Доход, Цена, Схема.</p>
+
+		<div style="margin-top: -0.5%" class="demo">
+		    <input type="checkbox" id="hd-1" class="hide"/>
+		    <label for="hd-1" style="font-weight: bold">Нажмите здесь, чтобы развернуть\свернуть ссылки для скачивания наборов</label>
+		    <div>
+				<a href="https://vk.cc/9AYooD" style="font-family: 'Montserrat', sans-serif; color: black;">Скачать набор "Отзывы"!</a>
+				<br>
+				<a href="https://vk.cc/9AYzVC" style="font-family: 'Montserrat', sans-serif; color: black;">Скачать набор "Цена\Доход"!</a>
+				<br>
+				<a href="https://vk.cc/9AYOe7" style="font-family: 'Montserrat', sans-serif; color: black;">Скачать набор "Схема"!</a>
+		    </div>
+		</div>
+	</center>
+
+	<center><p class="oneTitle">Скриншоты QIWI</p></center>
+	<center><p id="onlyText" class="oneText">Вы можете "понтоваться" фейк-скриншотами QIWI Кошелька, где показан Ваш большой баланс. Такие скришоты можно делать на сайте <a href="https://dealacc.ru/create/1/" style="font-weight: bold; color: black;">dealacc.ru</a></p>
+	<img src="images/screenQiwi.png" width="250" draggable="false">
+	</center>
+
+	<br><br>
+	<center><p class="oneTitle">Поиск и общение с Клиентом</p></center>
+	<center><p id="onlyText" class="oneText">Найти клиента можно среди своих подписчиков и подписок (если Вы занимались масслайкнигом и массфолловином). Вы должны сделать среди таких пользователей рассылку, содержащую текст о том, что Вы можете продать им схему заработка, и для неё нужен только Инстаграм. Создайте небольшой текст, в котором Вы можете использовать слова-магниты.</p>
+	<a href="https://avidreaders.ru/book/slova-magnity.html" style="font-family: 'Montserrat', sans-serif; color: black; font-weight: bold;">Перейти на сайт для скачивания Слов-Магнитов</a>
+	<br><p id="onlyText" class="oneText">Но вы не переусердствуйте, лимит Директа на одно сообщение - 500 символов. Так что умещайте все самое необходимое. <br>При общении с клиентом, торопите его к оплате, чтобы у него было меньше времени подумать, и он скорее купил. Расхвалите эту схему насколько это только возможно. Говорите, что так цена намного больше, но тебе делаю скидку в 50% только потому что у меня хорошее настроение. Ну или другую причину, на ваш вкус. Говорите что сам покупал эту схему за 1000-2000, а тебе продаю дешевле, потому что я могу продать большим людям и получить профит, окупив схему. Если попросят рассказать подробнее о схеме, то говорите что если подробнее - уже будет сама суть, вот такая простая схема, но профитная. Нужен только Инстаграм!</p>
+	</center>
+	<br><br><br>
+</body>
+</html>
